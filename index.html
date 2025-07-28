@@ -1,0 +1,734 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="/images/ONLINEBOOKS.png" type="image/png">
+    <title>ACSC ONLINEBOOKS</title>
+</head>
+<body style="background-color: rgba(255, 255, 255, 0.856)">
+<header style="background-color:rgba(158, 14, 105, 0.815);">
+    <nav >
+        <div id="navdi" style="background-color:rgba(151, 27, 106, 0.849); height: auto; width: 100vw;">
+            <img  id="menu2" src="images/fire.jpg">
+        <ul><li id="heading" >ACSC ONLINEBOOKS</li></ul>
+        <div class="contacts" >
+            <div id="next" >
+                CONTACT</div>
+                <div class="dropcontactsauthor">
+    <a href="https://discord.gg/NxzkTzW5"><img id="menu"  src="images/discord2.png"/></a>
+    <a href="https://wa.me/254791104910"><img id="menu"  src="images/whatsapp.jpeg"/></a>
+                </div>
+            </div>
+    
+            <div class="aboutauthor" >
+                <div id="next" >
+                    AUTHOR</div>
+                    <div class="dropcontactsauthor">
+        <a><img id="menu"  src="images/ONLINEBOOKS.png"/> VEUS-305</a>
+                    </div>
+                </div>
+     <a href="loginpage.html" target="_blank" >
+        <img src="images/DRAGON.png"  id="menu1"/>
+         </a>
+    </div>
+    </nav>
+</header>
+
+<div id="spherical-popup" class="hidden">
+  <div class="sphere">
+    <div class="sphere-inner">
+        <div class="curved-text">Donations    .</div>
+      <div class="curved-text">0791104910</div>
+    </div>
+    <button id="skip-btn">Skip</button>
+  </div>
+</div>
+
+
+
+    <button id="coursebtn"  onclick="toggleDropdown()" style="color:  rgb(255, 211, 13); font-weight: bold; ">COURSE UNITS</button>
+   <div id="bardiv">
+        <div id="alltopics">
+            <button id="referencebtn">
+        REFERENCES
+                </button>
+            <div class="contentsubt" >
+                <a href>OPERATING SYSTEMS by Benard Osera<br></a>
+
+                </div>
+            </div>
+            <div id="alltopics">
+                <button   id="keypointsbtn" >
+                KEY POINTS 
+                   </button>
+                    <div class="contentsubt2" >
+<ul> 
+                        <li><a href="">Understand the course unit.</a></li>
+                        <li><a href="">Read the syllabus.</a></li>
+                        <li><a href="">Attend all lectures.</a></li>
+                        <li><a href="">Read the notes.</a></li>
+                        <li><a href="">Read the books.</a></li>
+                        <li><a href="">Watch the video tutorials.</a></li>
+                        <li><a href="">Write short notes. </a></li>
+                        <li><a href="">Ensure your questions are answered.</a></li>
+                        <li><a href="">If programming practice them.</a></li>
+                        <li><a href="">If mathematics practice them.</a></li>
+                        <li><a href="">Always have a notebook for short notes</a></li>
+                        <li><a href="">Write down any idea you think</a></li>
+                        <li><a href="">Gather information about a subject and then ask why it is as it is</a></li>
+                        </ul>
+                        </div>
+                    </div>
+         <span  class="nopage" >
+            no pages</span></div>
+<div class="content" id="dropdown">
+    <a href="Os.html" target="_blank">OPERATING SYSTEMS (COSC 222)</a>
+    <a href="datastru.html" target="_blank">DATA STRUCTURES</a>
+    <a href="HtmlCssJavaScript.html" target="_blank">WEB DESIGN WITH HTML,CSS AND JAVASCRIPT</a>
+    <a href="OP1.html">1-INTRODUCTION TO OO DEVELOPMENT OCR</a>
+    <a href="OP2.html">2-INTRODUCTION TO OO DEVELOPMENT</a>
+    <a href="OP3.html">3-OBJECT ORIENTED CONCEPT OVERVIEW</a>
+    <a href="OP4.html">4-MORE ON OOP CONCEPTS</a>
+    <a href="OP5.html">5-OBJECT ORIENTED ANALYSIS</a>
+    <a href="OP6.html">6-OBJECT ORIENTED DESIGN I</a>
+    <a href="OP7.html">7-OBJECT ORIENTED DESIGN II</a>
+    <a href="OP8.html">8-UML LECTURE</a>
+    <a href="OP9.html">9- UML USE CASE DIAGRAMS</a>
+    <a href="OP10.html">10-UML OVERVIEW</a>
+    <a href="OP11.html">11-HANDLING EXCEPTIONS AND ASSERTIONS</a>
+    <a href="OP12.html">12-EXCEPTIONS</a>
+    <a href="OP13.html">13-JAVA GUI BASICS</a>
+    <a href="OP14.html">14-HANDLING EXCEPTIONS</a>
+    <a href="OP15.html">15-FILE AND IO</a>
+    <a href="OP16.html">16-FILE IO (INPUT & OUTPUT)</a>
+    <a href="OP17.html">17-ABSTRACTION</a>
+    <a href="OP18.html">18-CONNECTING TO DB USING JDBC</a>
+    <a href="OP19.html">19-DATABASE CONNECTIONS REVISED</a>
+    <a href="OP20.html">20-JAVA INTERFACES</a>
+    <a href="OP21.html">21-JAVA INPUT</a>
+    <a href="OP22.html">22-AWT TUTORIALS</a>
+    <a href="OP23.html">23-JAVA GUI LAYOUT BUTTON</a>
+</div>
+<div id="maindiv" class="text">
+<p>
+                <P id="r1">ONE OF THE BEST </P>
+            <P id="r2">WELL EXPLAINED BOOKS</P>
+                <P id="r3">SAMPLED JUST FOR YOU</P>
+</p>
+</div>
+<style>
+
+
+/* Hidden state by default */
+#spherical-popup.hidden {
+  display: none;
+}
+
+/* Popup container */
+#spherical-popup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 99999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  perspective: 1200px;
+}
+
+/* Spherical visual effect */
+.sphere {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  background-image: url('/images/mpesa.png');
+  background-size: cover;
+  background-position: center;
+  box-shadow: 0 0 60px rgba(0, 0, 0, 0.5);
+  transform: scale(0.2) translateZ(-800px);
+  animation: popOut 2s ease-out forwards;
+  position: relative;
+}
+
+/* 3D pop-out animation */
+@keyframes popOut {
+  0% {
+    transform: scale(0.2) translateZ(-800px);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1) translateZ(0);
+    opacity: 1;
+  }
+}
+
+/* Text inside sphere */
+.curved-text {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%) rotateX(20deg);
+  font-size: 36px;
+  font-weight: bold;
+  color: white;
+  text-shadow: 1px 1px 5px black;
+  transform-style: preserve-3d;
+  backface-visibility: hidden;
+    text-align: center;
+}
+
+/* Skip button */
+#skip-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background:  rgb(6, 250, 39);
+  border: none;
+  padding: 6px 14px;
+  border-radius: 12px;
+  cursor: pointer;
+  font-weight: bold;
+    color:white;
+}
+#skip-btn:hover {
+  background:#fa0814;
+}
+   
+
+    #r1{
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+font-size: 40px;
+font-weight: bold;
+position: absolute;
+left:500px ;
+top: 260px;
+padding: 8px;
+color: rgba(175, 19, 118, 0.849);
+text-shadow:4px 0px 0px black;
+z-index: -1;
+    }
+    #r2{
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+font-size: 40px;
+font-weight: bold;
+position: absolute;
+left:470px ;
+top: 295px;
+padding: 8px;
+text-shadow:4px 0px 0px #00000098;
+z-index:-1 ;
+    }
+     #r3{
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+font-size: 40px;
+font-weight: bold;
+position: absolute;
+left:500px ;
+top: 330px;
+text-shadow:4px 0px 0px black;
+padding: 8px;
+color: rgba(160, 9, 105, 0.815);
+z-index: -1;
+    }
+    .text{
+ transition:width 0.3s ease; width:auto; height:100vh; margin:0;
+display:flex;  text-align :left; box-shadow:0 0 10px rgba(0,0,0,1); font-family: Arial, Helvetica,
+ sans-serif;  border-radius: 10px;
+ overflow-y: auto;
+    }
+    .nopage{
+         position: absolute; top: 0px;display: block;
+          background-color: rgba(100, 5, 65, 0.815); height: 50px; width: 80px; 
+          color:rgb(230, 190, 14)
+    }
+    #referencebtn{
+        height: 40px; width: 120px; margin-top:5px; position: absolute; top:0px ; 
+            left: 150px;color: rgb(255, 211, 13); font-size: 15px; font-weight: bold;
+             text-align: center; 
+    }
+    #keypointsbtn{
+        height: 40px; width: 150px; margin-top:5px;
+                 position: absolute; top: 0px;left:300px; color: rgb(255, 211, 13); font-size: 15px;
+                  font-weight: bold; text-align: center;
+    }
+    #alltopics{
+    display: inline-block;
+     height: auto;
+      width: auto;
+}
+     button{
+background-color: rgba(126, 5, 82, 0.849);
+color: rgba(0, 0, 0, 0.822);
+padding: 10px 10px;
+font-size: 23px;
+font-weight: bold;
+cursor: pointer;
+border:2px;
+border-radius: 3px;
+margin-left: -10px;
+margin-bottom: 5px;
+box-shadow:0 0 10px rgba(0,0,0,1);
+        }
+        #bardiv{
+          z-index: 0;
+          position:absolute;
+           top:60px; 
+           left:195px;
+            display: inline-block;
+            border-radius: 5px;
+             border:2px; 
+             height:50px ;
+              width:85% ; 
+            background-color:rgba(158, 14, 105, 0.815);
+        }
+
+        #menu1{
+            width:80px; 
+            height: 60px; 
+            margin-right: 5px;
+            border-radius: 80px;
+        }
+        #next{
+            margin:10px;
+            padding:5px;
+            height: 30px;
+            width: auto;
+            text-align: center;
+            text-decoration: none;
+            text-transform:uppercase;
+            border-radius:5px;
+            box-shadow:0 0 10px rgba(0,0,0,1);
+            background-color:rgba(126, 5, 82, 0.849);
+            color:  rgb(255, 211, 13);
+             font-size: 20px; 
+             font-weight: bold;
+        }
+        #next:hover{
+           background-color: rgba(175, 19, 118, 0.849);
+        }
+        .contacts{
+            display: inline-block;
+            position: absolute;
+            top: 0px;
+            right: 90px; 
+        }
+        .aboutauthor{
+            display: inline-block;
+            position: absolute;
+            top: 0px;
+            right: 250px; 
+        }
+        .dropcontactsauthor{
+            display: none;
+            position:absolute;
+            top:45px;
+            left:0px;
+            background-color: rgba(0, 0, 0, 0.808);
+            min-height:auto;
+            width: 250px;
+            box-shadow:0 0 10px rgba(0,0,0,1);
+            color: rgb(255, 211, 13);
+            z-index: 1;
+        }
+        .dropcontactsauthor a{
+        text-decoration: none;
+            padding:5px ;
+            font-weight: bold;
+            font-size: 20px;
+            display:block;
+            padding:8px 20px;
+            color: rgb(255, 211, 13);
+        }
+        .dropcontactsauthor a:hover{
+            background-color: hsla(0, 8%, 30%, 0.959); 
+        }
+        .contacts:hover .dropcontactsauthor{
+            display: block;
+        }
+        .aboutauthor:hover .dropcontactsauthor{
+            display: block;
+        }
+         .content a{
+            text-decoration: none;
+            padding:5px ;
+           font-weight: bold;
+            font-size: 15px;
+            display: block;
+            padding:8px 20px;
+            color: rgb(255, 211, 13);
+        }
+        .contentsubt a{
+            text-decoration: none;
+            padding:5px ;
+            color: rgb(255, 211, 13); 
+            font-size: 15px; 
+            font-weight: bold;
+             text-align:left;
+            display:block;
+            padding:8px 20px;
+            
+        }
+        .contentsubt2 a{
+            text-decoration: none;
+            padding:5px ;
+            color: rgb(255, 211, 13);
+             font-size: 15px; 
+             font-weight: bold;
+              text-align: left;
+            padding:8px 20px;
+            display: block;
+        }
+
+        .contentsubt{
+            display: none;
+            position:absolute;
+            top:45px;
+            right:740px;
+            background-color: rgba(0, 0, 0, 0.808);
+            min-height: auto;
+            box-shadow:0 0 10px rgba(0,0,0,1);
+            color: rgb(255, 211, 13);
+        }
+        .contentsubt2{
+            display: none;
+            position:absolute;
+            top:45px;
+            right:570px;
+            background-color: rgba(0, 0, 0, 0.808);
+            min-height:auto;
+            box-shadow:0 0 10px rgba(0,0,0,1);
+            color: rgb(255, 211, 13);
+           
+        }
+        #alltopics:hover .contentsubt{
+            display: block;
+
+        }
+        #alltopics:hover .contentsubt2{
+            display: block;
+
+        }
+        .contentsubt a:hover{
+            background-color: rgba(0, 0, 0, 0.575); 
+        }
+        .contentsubt2 a:hover{
+            background-color: rgba(0, 0, 0, 0.575); 
+        }
+       
+         .content{
+            display: none;
+            position:absolute;
+            top:120px;
+            left:0px;
+            background-color: rgba(0, 0, 0, 0.808);
+            box-shadow:0 0 10px rgba(0,0,0,1);
+            color: rgb(255, 211, 13);
+            overflow-y: scroll;
+            height: 500px;
+           
+        }
+       
+        button:hover{
+            background-color: rgba(175, 19, 118, 0.849);
+
+        }
+        #nextb:hover{
+           height:32px ;
+           width: 82px; 
+           background-color: rgba(175, 19, 118, 0.849);
+        }
+         .content a:hover{
+             background-color: rgba(0, 0, 0, 0.575); 
+        }
+        
+        #nextb{
+            margin:10px;
+            padding:5px;
+            height: 30px;
+            width: 80px;
+            text-align: center;
+            text-decoration: none;
+            text-transform:uppercase;
+            border-radius:5px;
+            box-shadow:0 0 10px rgba(0,0,0,1);
+            background-color:  rgba(126, 5, 82, 0.849);
+        }
+ a div{ 
+            font-weight: 15px;
+            font-size:19px;
+        }
+        #heading{
+            font-size:25px; 
+            font-weight:bolder;
+             list-style: none;
+              color:  rgb(255, 211, 13);
+        }
+#menu2{
+    justify-content: left;
+    width: 60px;
+    height: 60px;
+}
+#menu{
+    
+    width: 60px;
+    height: 60px;   
+}
+#navdi {
+    display:flex;
+    justify-content:space-between;
+}
+header{
+    padding:0;
+}
+nav{
+    margin-top :-10px;
+    margin-left: -13px;
+    margin-right: -13px;
+    font-family: Verdana, sans-serif;
+    padding-right:5px;
+    padding-left:5px;
+}
+@media  (max-width:350px)  {
+    .contentsubt{
+            display: none;
+            position:absolute;
+            top:30px;
+            right:79px;
+            background-color: rgba(0, 0, 0, 0.808);
+            min-height: auto;
+            box-shadow:0 0 10px rgba(0,0,0,1);
+            color: rgb(255, 211, 13);
+            font-size: 0.6rem;
+
+        }
+        .contentsubt2{
+            display: none;
+            position:absolute;
+            top:30px;
+            right:58px;
+            background-color: rgba(0, 0, 0, 0.808);
+            min-height: auto;
+            box-shadow:0 0 10px rgba(0,0,0,1);
+            color: rgb(255, 211, 13);
+        }
+        .contentsubt a{
+            font-size: 0.7rem; 
+            font-weight: bold;         
+        }
+        .contentsubt2 a{
+            text-decoration: none;
+            padding:5px ;
+            color: rgb(255, 211, 13);
+             font-size: 0.7rem; 
+             font-weight: bold;
+        }
+
+    #menu2{
+        width: 20px;
+    height: 20px;
+    margin-top: 10px; 
+
+    }
+    #menu{
+    width: 20px;
+    height: 20px;
+}
+#menu1{
+    width: 20px;
+    height: 20px;
+    margin-top: 10px;   
+}
+#heading{
+    font-size: 0.7rem;
+    justify-content: left;
+    margin-right: 100px;
+    margin-left: -60px;
+}
+#next{
+    font-size: 0.5rem;
+    margin-top:10px;
+    padding:2px;
+    height: 18px;
+    border-radius:2px;
+}
+.contacts{
+    display: inline-block;
+    position: absolute;
+    top: 0px;
+    right: 70px;
+}
+.dropcontactsauthor{
+            display: none;
+            position:absolute;
+            top:45px;
+            left:0px;
+            background-color: rgba(0, 0, 0, 0.808);
+            min-height:auto;
+            width: 85px;
+            box-shadow:0 0 10px rgba(0,0,0,1);
+            color: rgb(255, 211, 13);
+            z-index: 1; 
+}
+.aboutauthor{
+             display: inline-block;
+            position: absolute;
+            top: 0px;
+            right: 20px; 
+            font-size: 9px;
+}
+#coursebtn{
+font-size: 0.6rem;
+}
+#bardiv{
+    font-size: 0.7rem;
+    position:absolute;
+    top:45px; 
+    left:95px;
+    height: 30px;
+}
+#referencebtn{
+    height: 20px; 
+    width: 80px; 
+    margin-top:5px; 
+    position: absolute;
+     top:0px ;
+     padding-bottom: 2px; 
+    left: 50px;
+     font-size: 0.6rem;
+      font-weight: bold;
+     text-align: center; 
+}
+.nopage{
+    position: absolute; top: 0px;display: block;
+     background-color: rgba(100, 5, 65, 0.815); height:inherit; width: 30px; 
+     color:rgb(230, 190, 14);
+     font-size: 0.6rem;
+}
+#keypointsbtn{
+    height: 20px; width: 80px;
+     margin-top:5px;
+    position: absolute;
+    top: 0px;
+    left:150px;
+     color: rgb(255, 211, 13); font-size:0.6rem;
+    font-weight: bold; 
+    
+}
+.text{
+    transition:width 0.3s ease; width:auto; height:100vh; margin:0;
+   display:flex;  text-align :left; box-shadow:0 0 10px rgba(0,0,0,1); font-family: Arial, Helvetica,
+    sans-serif;  border-radius: 5px;
+font-size: 0.8rem;
+padding: 5px;
+       }
+       .content{
+        display: none;
+        position:absolute;
+        top:79px;
+        left:0px;
+        background-color: rgba(0, 0, 0, 0.808);
+        min-height: 100vh;
+        width: 170px;
+        font-size: 0.6rem;
+        word-wrap: break-word;
+        overflow-y: scroll;
+       
+    }
+    .content a{
+       font-weight: bold;
+       font-size: 0.6rem;
+        display: block;
+        padding:8px 20px;
+        color: rgb(255, 211, 13);
+    }
+     #r1{
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+font-size: 40px;
+font-weight: bold;
+position: absolute;
+left:440px ;
+top: 260px;
+padding: 8px;
+color: rgba(175, 19, 118, 0.849);
+text-shadow:4px 0px 0px black;
+z-index: -1;
+    }
+    #r2{
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+font-size: 40px;
+font-weight: bold;
+position: absolute;
+left:410px ;
+top: 295px;
+padding: 8px;
+text-shadow:4px 0px 0px #00000098;
+z-index:-1 ;
+    }
+     #r3{
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+font-size: 40px;
+font-weight: bold;
+position: absolute;
+left:440px ;
+top: 330px;
+text-shadow:4px 0px 0px black;
+padding: 8px;
+color: rgba(160, 9, 105, 0.815);
+z-index: -1;
+    }
+   
+
+}
+    </style>
+     <script type="text/javascript">
+
+
+ window.addEventListener("load", () => {
+    const popup = document.getElementById("spherical-popup");
+    const skipBtn = document.getElementById("skip-btn");
+
+    // Show the popup after 5 minutes (300000 ms)
+    const timer = setTimeout(() => {
+      popup.classList.remove("hidden");
+    }, 3000);
+
+    // Allow user to skip
+    skipBtn.addEventListener("click", () => {
+      popup.classList.add("hidden");
+      clearTimeout(timer);
+    });
+  });
+
+
+        function checkWidth (){
+            if(window.innerWidth<=350){
+                console.log("screen width is 350 or less");
+            }
+        }
+        checkWidth();
+        window.addEventListener("resize",checkWidth);
+
+        function toggleDropdown(){
+        let dropdown= document.getElementById("dropdown");
+        let maindiv=document.getElementById("maindiv");
+        if(dropdown.style.display ==="none" || dropdown.style.display ===""){
+            dropdown.style.display="block";
+            if(window.innerWidth<=350){
+                dropdown.style.display="block";
+                maindiv.style.marginLeft="100px";
+            }
+            else{
+                maindiv.style.marginLeft="420px";
+            }
+        }
+       else {
+            dropdown.style.display="none"
+            maindiv.style.marginLeft="5px"
+        }
+    }
+
+            </script>
+</body>
+</html>
